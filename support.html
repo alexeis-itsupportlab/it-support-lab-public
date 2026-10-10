@@ -2,47 +2,68 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Support — IT Support Lab</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Bilingual support information for IT Support Lab.">
+  <title>IT Support Lab — Support</title>
   <style>
-    :root{color-scheme:dark;background:#07162f;color:#f5f7fb;font-family:Arial,Helvetica,sans-serif}body{margin:0;background:#07162f}main{width:min(900px,calc(100% - 32px));margin:0 auto;padding:32px 0 60px}a{color:#7db0ff}h1,h2{color:white}section{background:#0b1d3b;border:1px solid #29486f;border-radius:16px;padding:24px;margin:20px 0}p,li{line-height:1.65;color:#dce6f5}.meta{color:#a9bad3}.nav{margin-bottom:20px}.divider{height:1px;background:#29486f;margin:34px 0}</style>
+    :root { color-scheme: dark; --navy:#07162f; --panel:#10284d; --blue:#78a9ff; --teal:#65d6ca; --text:#f6f9ff; --muted:#c8d6ec; --line:#28466f; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--navy); color:var(--text); font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; line-height:1.65; }
+    main { width:min(820px,calc(100% - 32px)); margin:0 auto; padding:32px 0 64px; }
+    nav { display:flex; flex-wrap:wrap; justify-content:space-between; gap:12px; margin-bottom:24px; }
+    nav a, a { color:var(--blue); }
+    .brand { color:var(--teal); font-weight:900; letter-spacing:.08em; text-decoration:none; }
+    article { padding:clamp(22px,5vw,42px); background:var(--panel); border:1px solid var(--line); border-radius:22px; }
+    article + article { margin-top:30px; }
+    h1 { margin-top:0; font-size:clamp(1.9rem,6vw,3rem); line-height:1.15; }
+    h2 { margin-top:2rem; color:#dce9ff; font-size:1.25rem; }
+    p, li { color:var(--muted); }
+    li + li { margin-top:.55rem; }
+    .warning { padding:14px 16px; background:#0b1f3c; border-left:4px solid var(--teal); border-radius:10px; }
+    .separator { display:flex; align-items:center; gap:14px; margin:34px 0; color:var(--teal); font-weight:800; }
+    .separator::before,.separator::after { content:""; flex:1; height:1px; background:var(--line); }
+  </style>
 </head>
 <body>
-<main>
-  <div class="nav"><a href="index.html">← IT Support Lab</a></div>
-  <section>
-    <h1>Support</h1>
-    <p>IT Support Lab is a bilingual training app designed to help users learn, practice, troubleshoot, and build job-ready IT support skills.</p>
-    <h2>Basic troubleshooting</h2>
-    <ul>
-      <li>Close and reopen the app if a screen does not respond as expected.</li>
-      <li>Confirm your device has enough available storage and that the operating system is up to date.</li>
-      <li>If sound is not playing, check the Sound Effects and music settings in the app and your device volume.</li>
-      <li>If a lesson, quiz, or simulator needs another attempt, use the available retry or restart option.</li>
-    </ul>
-    <h2>Reinstalling</h2>
-    <p>Reinstall the app only as a last resort. Uninstalling the app may remove progress, scores, completion status, and preferences stored locally on the device.</p>
-    <h2>Contact</h2>
-    <p>If you need help, email <a href="mailto:itsupportlab.support@gmail.com">itsupportlab.support@gmail.com</a>.</p>
-  </section>
-
-  <div class="divider"></div>
-
-  <section lang="es">
-    <h1>Soporte</h1>
-    <p>IT Support Lab es una aplicación bilingüe de entrenamiento diseñada para ayudar a los usuarios a aprender, practicar, resolver problemas y desarrollar habilidades de soporte técnico listas para el trabajo.</p>
-    <h2>Solución de problemas básicos</h2>
-    <ul>
-      <li>Cierre y vuelva a abrir la aplicación si una pantalla no responde como se espera.</li>
-      <li>Confirme que el dispositivo tenga suficiente espacio disponible y que el sistema operativo esté actualizado.</li>
-      <li>Si no se escucha el sonido, revise las opciones de efectos de sonido y música en la aplicación y el volumen del dispositivo.</li>
-      <li>Si una lección, prueba o simulador necesita otro intento, utilice la opción disponible para reintentar o reiniciar.</li>
-    </ul>
-    <h2>Reinstalación</h2>
-    <p>Reinstale la aplicación solo como último recurso. Desinstalarla puede eliminar el progreso, las puntuaciones, el estado de finalización y las preferencias guardadas localmente en el dispositivo.</p>
-    <h2>Contacto</h2>
-    <p>Si necesita ayuda, escriba a <a href="mailto:itsupportlab.support@gmail.com">itsupportlab.support@gmail.com</a>.</p>
-  </section>
-</main>
+  <main>
+    <nav aria-label="Page navigation"><a class="brand" href="index.html">IT SUPPORT LAB</a><a href="privacy.html">Privacy / Privacidad</a></nav>
+    <article lang="en">
+      <h1>IT Support Lab Support</h1>
+      <p><strong>Developer:</strong> Alexeis Borroto</p>
+      <p>IT Support Lab is a bilingual educational app for practicing entry-level IT support lessons, assessments, scenarios, and ticket workflows.</p>
+      <h2>Basic troubleshooting</h2>
+      <ol>
+        <li>Close and reopen IT Support Lab.</li>
+        <li>If narration, music, or sound effects cannot be heard, check the device volume and silent-mode settings.</li>
+        <li>Open the app Settings and confirm that Sound Effects, Introduction Narration, or Introduction Music is enabled as appropriate.</li>
+        <li>If a lesson or understanding check does not behave as expected, leave the lesson, return to it, and use the available retry action.</li>
+        <li>Restart the device if the problem continues.</li>
+        <li>Reinstall the app only as a last resort.</li>
+      </ol>
+      <p class="warning"><strong>Local progress:</strong> Clearing app data or uninstalling may permanently remove locally stored progress, scores, completion state, resume state, and preferences. The developer cannot restore local progress remotely.</p>
+      <h2>Contact</h2>
+      <p><a href="mailto:itsupportlab.support@gmail.com">itsupportlab.support@gmail.com</a></p>
+      <p>Include the device model, operating-system version, app version, and a brief description of the issue. Do not send passwords, authentication codes, or other secrets.</p>
+    </article>
+    <div class="separator" aria-hidden="true">Español</div>
+    <article lang="es">
+      <h1>Soporte de IT Support Lab</h1>
+      <p><strong>Desarrollador:</strong> Alexeis Borroto</p>
+      <p>IT Support Lab es una aplicación educativa bilingüe para practicar lecciones, evaluaciones, escenarios y flujos de tickets de soporte técnico de nivel inicial.</p>
+      <h2>Solución básica de problemas</h2>
+      <ol>
+        <li>Cierra y vuelve a abrir IT Support Lab.</li>
+        <li>Si no escuchas la narración, la música o los efectos de sonido, revisa el volumen y el modo silencio del dispositivo.</li>
+        <li>Abre los Ajustes de la aplicación y confirma que Efectos de Sonido, Narración de la Introducción o Música de la Introducción estén activados según corresponda.</li>
+        <li>Si una lección o comprobación de conocimientos no funciona como esperas, sal de la lección, vuelve a entrar y utiliza la opción disponible para intentarlo de nuevo.</li>
+        <li>Reinicia el dispositivo si el problema continúa.</li>
+        <li>Reinstala la aplicación únicamente como último recurso.</li>
+      </ol>
+      <p class="warning"><strong>Progreso local:</strong> Borrar los datos de la aplicación o desinstalarla puede eliminar permanentemente el progreso, las puntuaciones, el estado de finalización y reanudación y las preferencias. El desarrollador no puede restaurar el progreso local de forma remota.</p>
+      <h2>Contacto</h2>
+      <p><a href="mailto:itsupportlab.support@gmail.com">itsupportlab.support@gmail.com</a></p>
+      <p>Incluye el modelo del dispositivo, la versión del sistema operativo, la versión de la aplicación y una descripción breve del problema. No envíes contraseñas, códigos de autenticación ni otros datos secretos.</p>
+    </article>
+  </main>
 </body>
 </html>
